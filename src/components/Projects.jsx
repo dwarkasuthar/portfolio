@@ -90,7 +90,7 @@ export default function Projects({ darkMode }) {
             >
               {/* Image side */}
               <div
-                className={`lg:col-span-7 order-2 ${i % 2 === 0 ? "lg:order-1" : "lg:order-2"}`}
+                className={`lg:col-span-5 order-1 hidden sm:block ${i % 2 === 0 ? "lg:order-1" : "lg:order-2"}`}
               >
                 <div
                   className={`relative aspect-[4/3] rounded-[3rem] overflow-hidden bg-gradient-to-br ${project.gradient} p-12 group-hover:scale-[1.02] transition-transform duration-700 shadow-2xl`}
@@ -109,8 +109,8 @@ export default function Projects({ darkMode }) {
                       </div>
                     </div>
 
-                    <div className="flex-1 flex items-center justify-center">
-                      <div className="text-9xl drop-shadow-2xl group-hover:scale-110 transition-transform duration-700">
+                    <div className="flex-1 flex items-center justify-center ">
+                      <div className="text-9xl drop-shadow-2xl group-hover:scale-110 transition-transform duration-700 ">
                         {project.emoji}
                       </div>
                     </div>

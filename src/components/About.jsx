@@ -87,9 +87,9 @@ export default function About({ darkMode }) {
             {/* Image Container */}
             <div className="relative group flex-shrink-0 -mt-6 lg:-mt-20 rounded-2xl border-5 border-white/10 transition-all duration-500 ease-out group-hover:scale-110 group-hover:-translate-x-9 group-hover:-translate-y-9 group-hover:shadow-2xl group-hover:shadow-green-500/50 mx-auto lg:mx-0">
               <div
-                className="rounded-lg border-2 border-white/10 transition-all duration-500 ease-out 
-                    group-hover:scale-110 group-hover:-translate-x-6 lg:group-hover:-translate-x-9 
-                    group-hover:-translate-y-6 lg:group-hover:-translate-y-9 
+                className="rounded-lg border-2 border-white/10 transition-all duration-300 ease-out 
+                    group-hover:scale-110 group-hover:-translate-x-6 lg:group-hover:-translate-x-7 
+                    group-hover:-translate-y-6 lg:group-hover:-translate-y-7 
                     group-hover:shadow-2xl group-hover:shadow-green-500/50"
               >
                 <Image
@@ -144,7 +144,7 @@ export default function About({ darkMode }) {
           {/* Stats/Details Grid */}
           <div className="grid grid-cols-2 gap-8 mt-12 pt-12 border-t border-dark-border">
             <div>
-              <div className="text-2xl font-bold mb-1">05 Months+</div>
+              <div className="text-2xl font-bold mb-1">06 Months+</div>
               <div
                 className={`text-xs font-bold tracking-widest uppercase ${darkMode ? "text-dark-muted" : "text-light-muted"}`}
               >
