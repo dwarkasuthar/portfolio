@@ -105,14 +105,14 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
               className="group relative"
             >
               <motion.div
-                whileHover={{ rotate: 360 }}
-                transition={{ duration: 0.6 }}
+                // whileHover={{ rotate: 360 }}
+                // transition={{ duration: 0.6 }}
                 className="text-2xl font-black gradient-text font-mono"
               >
                 DS
               </motion.div>
 
-              <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-primary transition-all duration-300 group-hover:w-full" />
+              {/* <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-primary transition-all duration-300 group-hover:w-full" /> */}
             </a>
 
             {/* Desktop Navigation */}

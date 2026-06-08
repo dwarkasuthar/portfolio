@@ -15,14 +15,14 @@ const experiences = [
         period: "Apr 2026 - Present",
         current: true,
         description:
-          "Developing and maintaining scalable web applications using React.js, Next.js, and Tailwind CSS. Collaborating with designers and backend developers to build performant, responsive, and user-focused experiences.",
+          "Creating fast, responsive, and user-friendly web experiences using Next.js, React.js, and Tailwind CSS.",
       },
       {
         role: "Frontend Development Intern",
         period: "Jan 2026 - Mar 2026",
         current: false,
         description:
-          "Contributed to frontend development, UI implementation, and feature enhancements while gaining hands-on experience with modern web technologies and development workflows.",
+          "Built and improved frontend features while collaborating on real-world projects. ",
       },
     ],
     skills: [
@@ -55,9 +55,8 @@ export default function Experience({ darkMode }) {
           className="text-center mb-16"
         >
           <span
-            className={`inline-block text-sm font-semibold tracking-[0.25em] uppercase mb-4 ${
-              darkMode ? "text-primary-light" : "text-primary"
-            }`}
+            className={`inline-block text-sm font-semibold tracking-[0.25em] uppercase mb-4 ${darkMode ? "text-primary-light" : "text-primary"
+              }`}
           >
             Experience
           </span>
@@ -67,9 +66,8 @@ export default function Experience({ darkMode }) {
           </h2>
 
           <p
-            className={`max-w-2xl mx-auto text-lg ${
-              darkMode ? "text-dark-muted" : "text-light-muted"
-            }`}
+            className={`max-w-2xl mx-auto text-lg ${darkMode ? "text-dark-muted" : "text-light-muted"
+              }`}
           >
             My growth from an intern to a full-time frontend developer,
             building modern web applications and contributing to real-world
@@ -86,37 +84,34 @@ export default function Experience({ darkMode }) {
               duration: 0.8,
               delay: companyIndex * 0.2,
             }}
-            className={`relative rounded-3xl overflow-hidden ${
-              darkMode
-                ? "bg-dark-surface border border-white/10"
-                : "bg-white border border-black/10 shadow-xl"
-            }`}
+            className={`relative overflow-hidden rounded-3xl ${darkMode
+                ? "md:bg-dark-surface md:border md:border-white/10"
+                : "md:bg-white md:border md:border-black/10 md:shadow-xl"
+              }`}
           >
             {/* Glow */}
             <div className="absolute top-0 right-0 w-72 h-72 bg-primary/10 blur-3xl rounded-full pointer-events-none" />
 
-            <div className="relative z-10 p-8 md:p-10">
+            <div className="relative z-10 px-0 py-2 md:p-10">
               {/* Company Header */}
               <div className="mb-8">
                 <h3
-                  className={`text-3xl font-bold mb-3 ${
-                    darkMode ? "text-dark-text" : "text-light-text"
-                  }`}
+                  className={`text-3xl font-bold mb-3 ${darkMode ? "text-dark-text" : "text-light-text"
+                    }`}
                 >
                   {company.company}
                 </h3>
 
                 <div
-                  className={`flex items-center gap-2 text-sm mb-4 ${
-                    darkMode ? "text-dark-muted" : "text-light-muted"
-                  }`}
+                  className={`flex items-center gap-2 text-sm mb-4 ${darkMode ? "text-dark-muted" : "text-light-muted"
+                    }`}
                 >
                   <FiMapPin size={14} />
                   {company.location}
                 </div>
 
                 {/* Promotion Badge */}
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 text-green-500 text-sm font-medium">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-green-500/10 text-green-500 text-sm font-medium">
                   <FiArrowUpRight />
                   {company.promotion}
                 </div>
@@ -126,9 +121,8 @@ export default function Experience({ darkMode }) {
               <div className="relative ml-2">
                 {/* Vertical Line */}
                 <div
-                  className={`absolute left-3 top-0 bottom-0 w-px ${
-                    darkMode ? "bg-white/10" : "bg-black/10"
-                  }`}
+                  className={`absolute left-3 top-0 bottom-0 w-px ${darkMode ? "bg-white/10" : "bg-black/10"
+                    }`}
                 />
 
                 <div className="space-y-10">
@@ -145,13 +139,12 @@ export default function Experience({ darkMode }) {
                     >
                       {/* Timeline Dot */}
                       <div
-                        className={`absolute left-0 top-2 w-7 h-7 rounded-full flex items-center justify-center ${
-                          position.current
+                        className={`absolute left-0 top-2 w-7 h-7 rounded-full flex items-center justify-center ${position.current
                             ? "bg-primary"
                             : darkMode
-                            ? "bg-white/20"
-                            : "bg-black/20"
-                        }`}
+                              ? "bg-white/20"
+                              : "bg-black/20"
+                          }`}
                       >
                         <div className="w-2 h-2 rounded-full bg-white" />
                       </div>
@@ -159,11 +152,10 @@ export default function Experience({ darkMode }) {
                       {/* Role */}
                       <div className="flex flex-wrap items-center gap-3 mb-2">
                         <h4
-                          className={`text-xl font-semibold ${
-                            darkMode
+                          className={`text-xl font-semibold ${darkMode
                               ? "text-dark-text"
                               : "text-light-text"
-                          }`}
+                            }`}
                         >
                           {position.role}
                         </h4>
@@ -176,21 +168,19 @@ export default function Experience({ darkMode }) {
                       </div>
 
                       <div
-                        className={`text-sm font-medium mb-4 ${
-                          darkMode
+                        className={`text-sm font-medium mb-4 ${darkMode
                             ? "text-dark-muted"
                             : "text-light-muted"
-                        }`}
+                          }`}
                       >
                         {position.period}
                       </div>
 
                       <p
-                        className={`leading-relaxed ${
-                          darkMode
+                        className={`leading-relaxed ${darkMode
                             ? "text-dark-muted"
                             : "text-light-muted"
-                        }`}
+                          }`}
                       >
                         {position.description}
                       </p>
