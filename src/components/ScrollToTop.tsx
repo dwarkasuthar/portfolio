@@ -19,6 +19,7 @@ export default function ScrollToTop({ darkMode }) {
     <AnimatePresence>
       {visible && (
         <motion.button
+        type="button"
           id="scroll-to-top"
           initial={{ opacity: 0, scale: 0.5, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -28,7 +29,7 @@ export default function ScrollToTop({ darkMode }) {
           className="fixed bottom-8 right-8 z-50 p-3.5 rounded-xl text-white shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl"
           style={{
             background: 'linear-gradient(135deg, #6C63FF, #00D9FF)',
-            boxShadow: '0 8px 30px rgba(108, 99, 255, 0.3)',
+            // boxShadow: '0 8px 30px rgba(108, 99, 255, 0.3)',
           }}
           aria-label="Scroll to top"
         >

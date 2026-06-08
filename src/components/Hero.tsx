@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { FiExternalLink } from 'react-icons/fi';
 
-export default function Hero({ darkMode }) {
+interface HeroProps {
+  darkMode: boolean;
+}
+
+export default function Hero({ darkMode }: HeroProps) {
   const [typedText, setTypedText] = useState('');
   const fullText = 'Frontend Developer';
 
@@ -18,7 +22,7 @@ export default function Hero({ darkMode }) {
     return () => clearInterval(interval);
   }, []);
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -29,19 +33,22 @@ export default function Hero({ darkMode }) {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { y: 20, opacity: 0 },
-    visible: { 
-      y: 0, 
-      opacity: 1, 
-      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } 
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        ease: [0.16, 1, 0.3, 1] as const,
+      },
     },
   };
 
   return (
-    <section 
-      id="hero" 
-      className="relative min-h-screen flex items-center justify-center section-padding overflow-hidden"
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center pt-28 sm:pt-24 overflow-hidden"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 w-full">
         <motion.div
@@ -53,11 +60,10 @@ export default function Hero({ darkMode }) {
           {/* Available Badge */}
           <motion.div
             variants={itemVariants}
-            className={`inline-flex items-center gap-2 px-5 py-2 rounded-full text-[10px] font-bold tracking-[0.2em] uppercase mb-6 sm:mb-8 transition-all duration-500 hover:scale-105 ${
-              darkMode
-                ? 'bg-primary/5 text-primary border border-primary/20'
-                : 'bg-primary/5 text-primary-dark border border-primary/15'
-            }`}
+            className={`inline-flex items-center gap-2 px-5 py-2 rounded-full text-[10px] font-bold tracking-[0.2em] uppercase mb-6 sm:mb-8 transition-all duration-500 hover:scale-105 ${darkMode
+              ? 'bg-primary/5 text-primary border border-primary/20'
+              : 'bg-primary/5 text-primary-dark border border-primary/15'
+              }`}
           >
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
             AVAILABLE FOR OPPORTUNITIES
@@ -66,7 +72,7 @@ export default function Hero({ darkMode }) {
           {/* Name */}
           <motion.h1
             variants={itemVariants}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black tracking-tighter mb-6 leading-none"
+            className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black tracking-tighter mb-4 sm:mb-6 leading-[0.95]"
           >
             <span className={darkMode ? 'text-dark-text' : 'text-light-text'}>
               Hi, I'm{' '}
@@ -79,9 +85,8 @@ export default function Hero({ darkMode }) {
           {/* Typing Effect */}
           <motion.div variants={itemVariants} className="mb-6 sm:mb-8">
             <span
-              className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl font-mono font-bold tracking-tight ${
-                darkMode ? 'text-dark-muted' : 'text-light-muted'
-              }`}
+              className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl font-mono font-bold tracking-tight ${darkMode ? 'text-dark-muted' : 'text-light-muted'
+                }`}
             >
               {typedText}
               <span className="typing-cursor" />
@@ -91,9 +96,8 @@ export default function Hero({ darkMode }) {
           {/* Subtitle */}
           <motion.p
             variants={itemVariants}
-            className={`text-xs sm:text-sm font-bold tracking-widest uppercase mb-6 px-4 ${
-              darkMode ? 'text-primary-light' : 'text-primary'
-            }`}
+            className={`text-xs sm:text-sm font-bold tracking-widest uppercase mb-6 px-4 ${darkMode ? 'text-primary-light' : 'text-primary'
+              }`}
           >
             BCA STUDENT • FRONTEND DEVELOPER • UI/UX ENTHUSIAST
           </motion.p>
@@ -101,9 +105,8 @@ export default function Hero({ darkMode }) {
           {/* Intro Text */}
           <motion.p
             variants={itemVariants}
-            className={`text-base sm:text-lg max-w-xl md:max-w-2xl mb-10 sm:mb-12 leading-relaxed px-4 sm:px-6 font-medium ${
-              darkMode ? 'text-dark-muted' : 'text-light-muted'
-            }`}
+            className={`text-base sm:text-lg max-w-xl md:max-w-2xl mb-10 sm:mb-12 leading-relaxed px-4 sm:px-6 font-medium ${darkMode ? 'text-dark-muted' : 'text-light-muted'
+              }`}
           >
             Passionate about building{' '}
             <span className={darkMode ? 'text-dark-text' : 'text-light-text'}>
@@ -138,11 +141,10 @@ export default function Hero({ darkMode }) {
                 e.preventDefault();
                 document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className={`inline-flex items-center justify-center gap-3 px-8 sm:px-10 py-4 rounded-2xl font-bold text-sm sm:text-base border-2 transition-all duration-300 hover:scale-105 active:scale-95 ${
-                darkMode
-                  ? 'border-white/20 text-white hover:border-primary hover:bg-white/5'
-                  : 'border-black/20 text-light-text hover:border-primary hover:bg-black/5'
-              }`}
+              className={`inline-flex items-center justify-center gap-3 px-8 sm:px-10 py-4 rounded-2xl font-bold text-sm sm:text-base border-2 transition-all duration-300 hover:scale-105 active:scale-95  ${darkMode
+                ? 'border-white/20 text-white hover:border-primary hover:bg-white/5'
+                : 'border-black/20 text-light-text hover:border-primary hover:bg-black/5'
+                }`}
             >
               Contact Me
             </a>
@@ -153,11 +155,10 @@ export default function Hero({ darkMode }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 2.2, duration: 1 }}
-            className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2"
+            className="absolute -bottom-9 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 cursor-pointer animate-bounce"
           >
-            <span className={`text-[10px] uppercase tracking-[0.3em] font-bold ${
-              darkMode ? 'text-dark-muted' : 'text-light-muted'
-            }`}>
+            <span className={`text-[10px] uppercase tracking-[0.3em] font-bold ${darkMode ? 'text-dark-muted' : 'text-light-muted'
+              }`}>
               SCROLL DOWN
             </span>
             <div className={`w-[1px] h-12 bg-gradient-to-b from-primary to-transparent`} />

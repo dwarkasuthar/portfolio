@@ -38,6 +38,7 @@ function App() {
       <BackgroundShapes />
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <main className="relative z-10">
+      {/* <CustomCursor /> */}
         <Hero darkMode={darkMode} />
         <About darkMode={darkMode} />
         <Skills darkMode={darkMode} />
