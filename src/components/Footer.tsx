@@ -50,7 +50,7 @@ export default function Footer({ darkMode }) {
 
   return (
     <footer
-      className={`relative overflow-hidden py-24 ${
+      className={`relative overflow-hidden ${
         darkMode ? "bg-dark-bg" : "bg-light-bg"
       }`}
     >

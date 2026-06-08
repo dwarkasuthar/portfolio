@@ -26,13 +26,13 @@ const experiences = [
       },
     ],
     skills: [
-      "React.js",
       "Next.js",
       "Tailwind CSS",
+      "React.js",
       "JavaScript",
       // "REST APIs",
-      // "Git",
-      // "Responsive Design",
+      "Github",
+      "Responsive Design",
     ],
   },
 ];

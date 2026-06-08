@@ -211,7 +211,7 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
             >
               <div>
                 <div className="flex justify-between items-center mb-12">
-                  <h2 className="text-3xl font-black">Menu</h2>
+                  <h2 className="text-3xl font-black tracking-wide text-primary">Menu</h2>
 
                   <button
                     onClick={() => setMobileOpen(false)}

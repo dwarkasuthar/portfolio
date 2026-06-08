@@ -6,9 +6,9 @@ export default function About({ darkMode }) {
   const [ref, inView] = useInView(0.2);
 
   const skills = [
-    "React.js",
-    "Next.js",
     "JavaScript",
+    "Next.js",
+    "React.js",
     "Tailwind CSS",
     // "Laravel",
     // "Node.js",
@@ -75,14 +75,14 @@ export default function About({ darkMode }) {
           </h2>
 
           <div
-            className={`space-y-6 text-[17px] leading-relaxed ${
-              darkMode ? "text-dark-muted" : "text-light-muted"
-            }`}
+            className={`space-y-6 text-[17px] leading-relaxed ${darkMode ? "text-dark-muted" : "text-light-muted"
+              }`}
           >
             <p>
-              I am a passionate Frontend Developer focused on building modern,
-              responsive, and user-friendly web applications using React.js,
-              Next.js, and Tailwind CSS.
+              Hi, I am Dwarka Suthar, an frontend developer
+              focused on building modern, responsive,
+              and user-friendly web applications using Next.js, React.js,
+              and Tailwind CSS.
             </p>
 
             <p>
@@ -94,17 +94,15 @@ export default function About({ darkMode }) {
             <p>
               Currently working as a
               <span
-                className={`font-semibold mx-1 ${
-                  darkMode ? "text-dark-text" : "text-light-text"
-                }`}
+                className={`font-semibold mx-1 ${darkMode ? "text-dark-text" : "text-light-text"
+                  }`}
               >
-                Frontend Development Intern
+                Junior Frontend Developer
               </span>
               at
               <span
-                className={`font-semibold ml-1 ${
-                  darkMode ? "text-dark-text" : "text-light-text"
-                }`}
+                className={`font-semibold ml-1 ${darkMode ? "text-dark-text" : "text-light-text"
+                  }`}
               >
                 Pinepesoft Private Limited
               </span>
@@ -116,9 +114,8 @@ export default function About({ darkMode }) {
           {/* Skills */}
           <div className="mt-10">
             <h3
-              className={`text-lg font-semibold mb-4 ${
-                darkMode ? "text-dark-text" : "text-light-text"
-              }`}
+              className={`text-lg font-semibold mb-4 ${darkMode ? "text-dark-text" : "text-light-text"
+                }`}
             >
               Technologies I Work With
             </h3>
@@ -138,9 +135,8 @@ export default function About({ darkMode }) {
           {/* Journey */}
           <div className="mt-10">
             <h3
-              className={`text-lg font-semibold mb-4 ${
-                darkMode ? "text-dark-text" : "text-light-text"
-              }`}
+              className={`text-lg font-semibold mb-4 ${darkMode ? "text-dark-text" : "text-light-text"
+                }`}
             >
               My Journey
             </h3>
@@ -163,9 +159,8 @@ export default function About({ darkMode }) {
 
           {/* Stats */}
           <div
-            className={`grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 pt-10 border-t ${
-              darkMode ? "border-white/10" : "border-black/10"
-            }`}
+            className={`grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 pt-10 border-t ${darkMode ? "border-white/10" : "border-black/10"
+              }`}
           >
             {[
               ["06+", "Months"],
@@ -177,9 +172,8 @@ export default function About({ darkMode }) {
                 <div className="text-3xl font-bold text-primary">{value}</div>
 
                 <div
-                  className={`text-xs uppercase tracking-widest mt-2 ${
-                    darkMode ? "text-dark-muted" : "text-light-muted"
-                  }`}
+                  className={`text-xs uppercase tracking-widest mt-2 ${darkMode ? "text-dark-muted" : "text-light-muted"
+                    }`}
                 >
                   {label}
                 </div>
