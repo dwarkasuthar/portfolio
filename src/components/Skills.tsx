@@ -23,7 +23,7 @@ interface SkillsProps {
 }
 
 const techStack = [
-  { name: "Next.js", icon: SiNextdotjs, color: "#FFFFFF" },
+  { name: "Next.js", icon: SiNextdotjs,},
   // { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
   { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38BDF8" },
   { name: "React", icon: SiReact, color: "#61DAFB" },
@@ -31,7 +31,7 @@ const techStack = [
   { name: "HTML5", icon: SiHtml5, color: "#E44D26" },
   { name: "CSS", icon: SiCss, color: "#264DE4" },
   // { name: "Git", icon: SiGit, color: "#F05032" },
-  { name: "GitHub", icon: SiGithub, color: "#808080" },
+  { name: "GitHub", icon: SiGithub,  },
 ];
 
 const learningStack = [

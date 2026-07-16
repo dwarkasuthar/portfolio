@@ -7,19 +7,19 @@ import { useInView } from "./useInView";
 const experiences = [
   {
     company: "Pinepesoft Private Limited",
-    location: "Delhi, India",
-    promotion: "Promoted from Intern to Junior Frontend Developer",
+    location: "Remote",
+    // promotion: "Promoted from Intern to Junior Frontend Developer",
     positions: [
-      {
-        role: "Junior Frontend Developer",
-        period: "Apr 2026 - Present",
-        current: true,
-        description:
-          "Creating fast, responsive, and user-friendly web experiences using Next.js, React.js, and Tailwind CSS.",
-      },
+      // {
+      //   role: "Junior Frontend Developer",
+      //   period: "Apr 2026 - Present",
+      //   current: true,
+      //   description:
+      //     "Creating fast, responsive, and user-friendly web experiences using Next.js, React.js, and Tailwind CSS.",
+      // },
       {
         role: "Frontend Development Intern",
-        period: "Jan 2026 - Mar 2026",
+        period: "Jan 2026 - June 2026",
         current: false,
         description:
           "Built and improved frontend features while collaborating on real-world projects. ",
@@ -111,10 +111,10 @@ export default function Experience({ darkMode }) {
                 </div>
 
                 {/* Promotion Badge */}
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-green-500/10 text-green-500 text-sm font-medium">
+                {/* <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-green-500/10 text-green-500 text-sm font-medium">
                   <FiArrowUpRight />
                   {company.promotion}
-                </div>
+                </div> */}
               </div>
 
               {/* Timeline */}

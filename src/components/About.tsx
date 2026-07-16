@@ -6,7 +6,6 @@ export default function About({ darkMode }) {
   const [ref, inView] = useInView(0.2);
 
   const skills = [
-    "JavaScript",
     "Next.js",
     "React.js",
     "Tailwind CSS",
@@ -92,12 +91,12 @@ export default function About({ darkMode }) {
             </p>
 
             <p>
-              Currently working as a
+              Completed a
               <span
                 className={`font-semibold mx-1 ${darkMode ? "text-dark-text" : "text-light-text"
                   }`}
               >
-                Junior Frontend Developer
+                6-month Frontend Developer Internship
               </span>
               at
               <span
@@ -106,8 +105,7 @@ export default function About({ darkMode }) {
               >
                 Pinepesoft Private Limited
               </span>
-              , where I contribute to production-level applications and
-              continuously improve my development skills.
+              , where I worked on responsive web applications, implemented frontend features, integrated APIs, and gained hands-on experience in modern web development.
             </p>
           </div>
 
@@ -164,8 +162,8 @@ export default function About({ darkMode }) {
           >
             {[
               ["06+", "Months"],
-              ["03+", "Projects"],
-              ["10+", "Technologies"],
+              ["02+", "Projects"],
+              // ["10+", "Technologies"],
               ["100%", "Dedication"],
             ].map(([value, label]) => (
               <div key={label}>

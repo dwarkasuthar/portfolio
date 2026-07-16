@@ -99,7 +99,7 @@ export default function Hero({ darkMode }: HeroProps) {
             className={`text-xs sm:text-sm font-bold tracking-widest uppercase mb-6 px-4 ${darkMode ? 'text-primary-light' : 'text-primary'
               }`}
           >
-            BCA STUDENT • FRONTEND DEVELOPER • UI/UX ENTHUSIAST
+            BCA STUDENT • FRONTEND DEVELOPER
           </motion.p>
 
           {/* Intro Text */}
